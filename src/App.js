@@ -7,6 +7,7 @@ import Feature from './components/Feature';
 import Footer from './components/shared/Footer';
 import Header from './components/shared/Header';
 import Owner from './components/Owner';
+import CreateCertificateForm from './components/CreateCertificateForm';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/owner" element={<Owner />} />
+        <Route path="/gen-certificate" element={<CreateCertificateForm />} />
       </Routes>
       <Footer />
     </Router>

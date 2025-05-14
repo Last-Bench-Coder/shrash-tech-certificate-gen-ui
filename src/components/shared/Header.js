@@ -40,9 +40,9 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <button className="create-btn">
+            <Link to="/gen-certificate" className="create-btn">
               <FileBadge size={16} className="nav-icon" /> Generate Certificate
-            </button>
+            </Link>
           </li>
         </ul>
       </nav>
