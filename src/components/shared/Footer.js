@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { Facebook, Twitter, Instagram, ArrowUp } from 'lucide-react';
+import { Facebook, Twitter, Instagram, ArrowUp, Link } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -42,7 +42,7 @@ const Footer = () => {
       <hr />
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Shrash-Tech. All rights reserved. Designed</p>
+        <p>© {new Date().getFullYear()} Shrash-Tech. All rights reserved. Designed and Developed by <Link to="/owner">Chakrapani Upadhyaya</Link></p>
         <div className="go-top" onClick={scrollToTop} title="Go to Top">
           <ArrowUp size={20} />
         </div>
