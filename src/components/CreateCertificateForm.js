@@ -11,12 +11,12 @@ const CreateCertificateForm = () => {
   const [phone, setPhone] = useState('');
   const [certificateId, setCertificateId] = useState(''); // Holds the ID after creation
 
-  const [instituteName] = useState('Shrash Tech Academy');
-  const [instituteAddress] = useState('123 Tech Street, Innovation City');
-  const [institutePhone] = useState('9876543210');
-  const [instituteEmail] = useState('info@shrashtech.com');
-  const [instituteLogo] = useState('https://i.imgur.com/3sVGZsi.png');
-  const [signatureName] = useState('Chakrapani U');
+  const [instituteName] = useState('');
+  const [instituteAddress] = useState('');
+  const [institutePhone] = useState('');
+  const [instituteEmail] = useState('');
+  const [instituteLogo] = useState('');
+  const [signatureName] = useState('');
 
   const [errorMessage, setErrorMessage] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
