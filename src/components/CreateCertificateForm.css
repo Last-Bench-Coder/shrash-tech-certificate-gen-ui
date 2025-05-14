@@ -86,17 +86,25 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .submit-btn:hover {
   background-color: #2980b9;
-  transform: scale(1.05);
 }
 
 .error-message {
-  color: #e74c3c;
-  font-weight: 600;
+  color: red;
+  font-size: 1rem;
   margin-bottom: 15px;
-  text-align: center;
+}
+
+/* Row for Institute Name, Address, Phone, and Email */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.col {
+  flex: 1;
 }

@@ -8,14 +8,14 @@ const CreateCertificateForm = () => {
   const [date, setDate] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-  
-  // Institute details (constants)
-  const [instituteName] = useState('Shrash Tech Academy');
-  const [instituteAddress] = useState('123 Tech Street, Innovation City');
-  const [institutePhone] = useState('9876543210');
-  const [instituteEmail] = useState('info@shrashtech.com');
-  const [instituteLogo] = useState('https://i.imgur.com/3sVGZsi.png');
-  const [signatureName] = useState('Chakrapani U');
+
+  // Institute details (editable now)
+  const [instituteName, setInstituteName] = useState('Shrash Tech Academy');
+  const [instituteAddress, setInstituteAddress] = useState('123 Tech Street, Innovation City');
+  const [institutePhone, setInstitutePhone] = useState('9876543210');
+  const [instituteEmail, setInstituteEmail] = useState('info@shrashtech.com');
+  const [instituteLogo, setInstituteLogo] = useState('https://i.imgur.com/3sVGZsi.png');
+  const [signatureName, setSignatureName] = useState('Chakrapani U');
 
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -127,54 +127,73 @@ const CreateCertificateForm = () => {
             />
           </div>
 
-          {/* Institute Details (Static values) */}
-          <div className="form-group">
-            <label htmlFor="instituteName">Institute Name</label>
-            <input
-              type="text"
-              id="instituteName"
-              value={instituteName}
-              readOnly
-            />
+          {/* Institute Details - Two fields in one row */}
+          <div className="row">
+            <div className="col">
+              <div className="form-group">
+                <label htmlFor="instituteName">Institute Name</label>
+                <input
+                  type="text"
+                  id="instituteName"
+                  value={instituteName}
+                  onChange={(e) => setInstituteName(e.target.value)}
+                  placeholder="Enter institute name"
+                />
+              </div>
+            </div>
+
+            <div className="col">
+              <div className="form-group">
+                <label htmlFor="instituteAddress">Institute Address</label>
+                <input
+                  type="text"
+                  id="instituteAddress"
+                  value={instituteAddress}
+                  onChange={(e) => setInstituteAddress(e.target.value)}
+                  placeholder="Enter institute address"
+                />
+              </div>
+            </div>
           </div>
 
-          <div className="form-group">
-            <label htmlFor="instituteAddress">Institute Address</label>
-            <input
-              type="text"
-              id="instituteAddress"
-              value={instituteAddress}
-              readOnly
-            />
+          {/* Institute Phone and Email in one row */}
+          <div className="row">
+            <div className="col">
+              <div className="form-group">
+                <label htmlFor="institutePhone">Institute Phone</label>
+                <input
+                  type="tel"
+                  id="institutePhone"
+                  value={institutePhone}
+                  onChange={(e) => setInstitutePhone(e.target.value)}
+                  placeholder="Enter institute phone"
+                />
+              </div>
+            </div>
+
+            <div className="col">
+              <div className="form-group">
+                <label htmlFor="instituteEmail">Institute Email</label>
+                <input
+                  type="email"
+                  id="instituteEmail"
+                  value={instituteEmail}
+                  onChange={(e) => setInstituteEmail(e.target.value)}
+                  placeholder="Enter institute email"
+                />
+              </div>
+            </div>
           </div>
 
-          <div className="form-group">
-            <label htmlFor="institutePhone">Institute Phone</label>
-            <input
-              type="tel"
-              id="institutePhone"
-              value={institutePhone}
-              readOnly
-            />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="instituteEmail">Institute Email</label>
-            <input
-              type="email"
-              id="instituteEmail"
-              value={instituteEmail}
-              readOnly
-            />
-          </div>
-
+          {/* Signature Name */}
           <div className="form-group">
             <label htmlFor="signatureName">Signature Name</label>
             <input
               type="text"
               id="signatureName"
               value={signatureName}
-              readOnly
+              onChange={(e) => setSignatureName(e.target.value)}
+              placeholder="Enter signature name"
             />
           </div>
 
