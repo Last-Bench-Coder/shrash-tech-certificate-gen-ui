@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import API_ENDPOINTS from './constants/api'; // Importing API constants
+import API_ENDPOINTS from '../constants/api'; // Importing API constants
 import './CreateCertificateForm.css';
 
 const CreateCertificateForm = () => {
