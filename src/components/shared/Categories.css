@@ -1,0 +1,73 @@
+.categories {
+    padding: 4rem 2rem;
+    background-color: #f8fafc;
+    text-align: center;
+  }
+  
+  .categories-heading {
+    font-size: 2.5rem;
+    color: #1e3a8a;
+    margin-bottom: 0.5rem;
+  }
+  
+  .categories-subtitle {
+    color: #475569;
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .categories-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    justify-items: center;
+  }
+  
+  .category-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-wrapper {
+    background: #e0f2fe;
+    padding: 1rem;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .cat-icon {
+    font-size: 2rem;
+    color: #2563eb;
+  }
+  
+  .category-card h3 {
+    color: #0f172a;
+    margin-bottom: 0.25rem;
+  }
+  
+  .category-card small {
+    display: block;
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .category-card p {
+    color: #334155;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  

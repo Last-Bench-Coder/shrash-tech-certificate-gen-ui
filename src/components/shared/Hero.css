@@ -1,0 +1,63 @@
+/* Adding a stylish gradient color, shadow effects, and a professional look */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 2rem 1rem;
+  background: linear-gradient(to right, #e0f2fe, #f0f9ff);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;  /* Adding a modern font */
+}
+
+.hero-title {
+  font-size: 3rem; /* Increased font size for better visibility */
+  color: #1e40af;
+  background: linear-gradient(to right, #FF6A00, #FF3A3A); /* Stylish gradient text color */
+  -webkit-background-clip: text;  /* Clip the background to text */
+  color: transparent; /* Ensure background gradient works */
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Adding a subtle shadow for a stylish effect */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cursor {
+  display: inline-block;
+  width: 1px;
+  background-color: #1e40af;
+  animation: blink 0.7s step-start infinite;
+}
+
+.cursor.hidden {
+  display: none;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #334155;
+  margin-bottom: 1.5rem;
+  font-weight: 500; /* Added some weight for more prominence */
+}
+
+.hero-btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow for a clean, professional look */
+}
+
+.hero-btn:hover {
+  background-color: #1d4ed8;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+}

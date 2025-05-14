@@ -1,0 +1,91 @@
+.user-reviews {
+    padding: 4rem 2rem;
+    background-color: #f8fafc;
+    text-align: center;
+  }
+  
+  .review-heading {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    color: #1e3a8a;
+    font-weight: bold;
+  }
+  
+  .reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .review-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    padding: 2rem;
+    max-width: 320px;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .review-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .user-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .review-content h3 {
+    font-size: 1.2rem;
+    color: #0f172a;
+    margin-bottom: 0.25rem;
+  }
+  
+  .user-title {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .review-date {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin-bottom: 0.75rem;
+  }
+  
+  .comment {
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.4;
+  }
+
+  .reviews-subtitle {
+    font-size: 1.1rem;
+    color: #475569;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    position: relative;
+  }
+  
+  .star-icon {
+    color: #facc15; /* Golden yellow */
+    font-size: 1.25rem;
+    margin: 0 0.5rem;
+  }
+  
+  

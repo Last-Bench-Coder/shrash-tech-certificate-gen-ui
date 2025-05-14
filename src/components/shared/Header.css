@@ -1,0 +1,147 @@
+/* Header.css */
+
+.header {
+  background-color: #2563eb;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
+}
+
+/* LOGO STYLING */
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ff6b6b, #ffcc70);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  border: 2px solid white;
+  padding: 0.3rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.logo a,
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* NAVIGATION STYLING */
+.nav {
+  display: flex;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+/* NAV ITEM + ICON */
+.nav-links a,
+.nav-links button {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #facc15; /* gold */
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* CERTIFICATE BUTTON */
+.create-btn {
+  background-color: rgb(12, 54, 145);
+  color: #dbdfe9;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.create-btn:hover {
+  background-color: #4e19df;
+  transform: scale(1.05);
+}
+
+/* MOBILE MENU ICON */
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* RESPONSIVE NAVIGATION */
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #2563eb;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}

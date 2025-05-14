@@ -1,0 +1,179 @@
+/* Owner.css */
+
+.owner-container {
+    min-height: 100vh;
+    padding: 4rem 1rem;
+    background: linear-gradient(to bottom right, #f0f4ff, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .owner-card {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    border-left: 6px solid #2563eb;
+  }
+  
+  .owner-left {
+    background-color: #f3f4f6;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .owner-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 9999px;
+    object-fit: cover;
+    border: 4px solid #2563eb;
+    margin-bottom: 1rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .qr-code {
+    margin-top: 1rem;
+    width: 160px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  }
+  
+  .coffee-section {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .coffee-section h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ef4444;
+  }
+  
+  .coffee-icon {
+    color: #d97706;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .social-links a {
+    color: #374151;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #2563eb;
+  }
+  
+  .owner-right {
+    flex: 1;
+    padding: 2rem 3rem;
+  }
+  
+  .owner-name {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1f2937;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+  
+  .verified-icon {
+    color: #22c55e;
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  
+  .pronouns {
+    font-size: 1rem;
+    color: #6b7280;
+  }
+  
+  .owner-role {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4b5563;
+    margin: 1rem 0;
+  }
+  
+  .owner-summary {
+    font-size: 1rem;
+    color: #374151;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .owner-skills {
+    list-style: none;
+    padding-left: 0;
+    color: #1e3a8a;
+    font-weight: 500;
+  }
+  
+  .owner-skills li {
+    margin: 0.4rem 0;
+  }
+  
+  .hobbies-section {
+    margin-top: 2rem;
+  }
+  
+  .hobbies-section h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 0.8rem;
+  }
+  
+  .hobbies-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .hobbies-section li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: #4b5563;
+    margin-bottom: 0.6rem;
+  }
+  
+  .hobby-icon {
+    color: #7c3aed;
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Responsive layout */
+  @media (min-width: 768px) {
+    .owner-card {
+      flex-direction: row;
+    }
+  
+    .owner-left, .owner-right {
+      flex: 1;
+    }
+  
+    .owner-left {
+      border-right: 1px solid #e5e7eb;
+    }
+  }
+  
