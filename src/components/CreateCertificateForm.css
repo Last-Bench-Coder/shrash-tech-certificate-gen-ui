@@ -1,73 +1,98 @@
-/* CreateCertificateForm.css */
-
 .certificate-form-container {
-  max-width: 800px;
-  margin: 2rem auto;
+  width: 80%;
+  margin: 0 auto;
   padding: 2rem;
   background-color: #f9f9f9;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.form-header {
-  text-align: center;
+.form-title {
   font-size: 2rem;
+  font-weight: 700;
   color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .form-description {
   text-align: center;
+  font-size: 1.2rem;
   color: #555;
   margin-bottom: 2rem;
 }
 
-.certificate-form .form-group {
-  margin-bottom: 1.5rem;
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
-.certificate-form .form-group label {
-  display: block;
-  font-size: 1.1rem;
-  color: #333;
-  margin-bottom: 0.5rem;
+.form-group {
+  width: 48%;
 }
 
-.certificate-form .form-group input {
+.full-width {
+  width: 100%;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #444;
+}
+
+.form-group input, .form-group textarea {
   width: 100%;
   padding: 0.8rem;
-  font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 
-.certificate-form .btn-create {
+.form-group textarea {
+  resize: vertical;
+}
+
+.btn {
   width: 100%;
-  padding: 0.8rem;
+  padding: 1rem;
   font-size: 1.1rem;
-  color: #fff;
-  background-color: #00695c;
+  background-color: #007bff;
+  color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.certificate-form .btn-create:hover {
-  background-color: #004d40;
+.btn:hover {
+  background-color: #0056b3;
 }
 
 .alert {
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  margin-top: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
 }
 
 .alert i {
-  font-size: 1.5rem;
+  margin-right: 10px;
 }
 
-.error-message {
-  color: red;
-  text-align: center;
-  margin-top: 1rem;
+.alert-success {
+  background-color: #28a745;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group {
+    width: 100%;
+  }
 }
