@@ -1,17 +1,49 @@
 .certificate-form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
   background-color: #f4f6f9;
   border-radius: 8px;
-  padding: 30px;
-  max-width: 500px;
-  margin: 40px auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.certificate-form-container h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 20px;
+.left-side {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
   color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.left-side .description {
+  font-size: 1.1rem;
+  color: #34495e;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.left-side .institute-logo {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.right-side {
+  flex: 2;
+  padding: 20px;
 }
 
 .certificate-form {

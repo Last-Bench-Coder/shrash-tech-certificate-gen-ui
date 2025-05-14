@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 import "./Hero.css";
 
 const typingText = "Welcome to Shrash-Tech Certificate Generator";
@@ -28,7 +29,7 @@ const Hero = () => {
         <span className={`cursor ${showCursor ? "" : "hidden"}`}>|</span>
       </h1>
       <p className="hero-subtitle">Generate, download, and email your certificates – free and instant!</p>
-      <button className="hero-btn">Generate Certificate</button>
+      <Link to="/gen-certificate" className="hero-btn">Generate Certificate</Link>
     </section>
   );
 };
