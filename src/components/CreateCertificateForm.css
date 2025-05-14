@@ -19,19 +19,21 @@
   align-items: center;
 }
 
-.left-side h2 {
-  font-size: 2.5rem;
+.left-side .form-header {
+  font-size: 2.8rem;
   font-weight: 700;
   color: #2c3e50;
   margin-bottom: 20px;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
-.left-side .description {
+.left-side .form-description {
   font-size: 1.1rem;
   color: #34495e;
   text-align: center;
   margin-bottom: 30px;
+  font-family: 'Arial', sans-serif;
 }
 
 .left-side .institute-logo {

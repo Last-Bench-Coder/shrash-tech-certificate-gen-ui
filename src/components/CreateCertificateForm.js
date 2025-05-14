@@ -62,10 +62,9 @@ const CreateCertificateForm = () => {
   return (
     <div className="certificate-form-container">
       <div className="left-side">
-        <h2>Create a Certificate</h2>
-        <p className="description">
-          Please fill out the form below to generate a certificate for your student.
-          Ensure all fields are correctly filled to receive a valid certificate.
+        <h2 className="form-header">Create a Professional Certificate</h2>
+        <p className="form-description">
+          Fill in the details below to generate a personalized certificate. Make sure all fields are filled in accurately for a valid certificate.
         </p>
         <img src={instituteLogo} alt="Institute Logo" className="institute-logo" />
       </div>
