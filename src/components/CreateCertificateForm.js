@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './CertificateForm.css';
+import './CreateCertificateForm.css';
 import { API_ENDPOINTS } from '../constants/api'; // Ensure API constants are imported
 import axios from 'axios';
 
-const CertificateForm = () => {
+const CreateCertificateForm = () => {
   const [studentName, setStudentName] = useState('');
   const [courseName, setCourseName] = useState('');
   const [date, setDate] = useState('');
@@ -150,4 +150,4 @@ const CertificateForm = () => {
   );
 };
 
-export default CertificateForm;
+export default CreateCertificateForm;
