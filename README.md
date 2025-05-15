@@ -12,7 +12,7 @@ A professional, responsive certificate generation platform that allows users to 
 
 ## Download Certificate
 
-![image](https://github.com/user-attachments/assets/a724c552-002b-4f3b-ba18-e37d2ae4f06c)
+![image](https://github.com/user-attachments/assets/f8ff5d6b-aaff-40da-b01f-8519266fdf7e)
 
 ---
 
