@@ -166,3 +166,14 @@
 .alt-template-note a:hover {
   text-decoration: underline;
 }
+
+.error-message {
+  color: red;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #ffecec;
+  border: 1px solid #ff6b6b;
+  border-radius: 8px;
+}

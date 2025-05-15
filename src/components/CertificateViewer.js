@@ -7,12 +7,23 @@ import { useParams, Link } from "react-router-dom";
 const CertificateViewer = () => {
   const { id } = useParams();
   const [certificate, setCertificate] = useState(null);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     axios
       .get(`https://certificate-dunia-api.vercel.app/api/certificates/${id}`)
-      .then((res) => setCertificate(res.data))
-      .catch((err) => console.error(err));
+      .then((res) => {
+        if (res.data) {
+          setCertificate(res.data);
+          setError(null);
+        } else {
+          setError("The certificate does not exist or was removed due to internal policy. Please contact the administrator.");
+        }
+      })
+      .catch((err) => {
+        console.error(err);
+        setError("The certificate does not exist or was removed due to internal policy. Please contact the administrator.");
+      });
   }, [id]);
 
   const handleDownload = () => {
@@ -27,7 +38,17 @@ const CertificateViewer = () => {
     html2pdf().set(opt).from(element).save();
   };
 
-  if (!certificate) return <div>Loading...</div>;
+  if (error) {
+    return (
+      <div className="cert-wrapper">
+        <div className="error-message">
+          ❌ {error}
+        </div>
+      </div>
+    );
+  }
+
+  if (!certificate) return <div className="cert-wrapper">Loading...</div>;
 
   const formattedDate = new Date(certificate.date).toLocaleDateString();
   const signatureWidth = `${certificate.signatureName.length * 12}px`;
@@ -44,13 +65,9 @@ const CertificateViewer = () => {
           />
           <div className="cert-header">
             <h1>🎓 Certificate of Completion</h1>
-            <p className="cert-subtitle">
-              This is to proudly recognize
-            </p>
+            <p className="cert-subtitle">This is to proudly recognize</p>
             <h2>{certificate.studentName}</h2>
-            <p className="cert-desc">
-              has successfully completed the course
-            </p>
+            <p className="cert-desc">has successfully completed the course</p>
             <h3>{certificate.courseName}</h3>
             <p className="cert-date">Awarded on {formattedDate}</p>
             <p className="cert-id">Certificate ID: {certificate.certificateId}</p>
@@ -58,15 +75,11 @@ const CertificateViewer = () => {
 
           <div className="cert-footer">
             <div className="footer-info">
-              {certificate.instituteName} • {certificate.instituteAddress} •{" "}
-              {certificate.instituteEmail}
+              {certificate.instituteName} • {certificate.instituteAddress} • {certificate.instituteEmail}
             </div>
             <div className="signature-block">
               <div className="signature-name">{certificate.signatureName}</div>
-              <div
-                className="signature-line"
-                style={{ width: signatureWidth }}
-              ></div>
+              <div className="signature-line" style={{ width: signatureWidth }}></div>
               <div className="signature-title">Authorized Signature</div>
             </div>
           </div>
