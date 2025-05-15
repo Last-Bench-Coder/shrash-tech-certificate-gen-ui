@@ -36,7 +36,7 @@ const Header = () => {
           </li>
           <li>
             <Link to="/certificate-search" onClick={() => setMobileMenuOpen(false)}>
-              <Download size={18} className="nav-icon" /> Download Certificate
+              <Download size={18} className="nav-icon" /> Download
             </Link>
           </li>
           <li>
