@@ -1,0 +1,168 @@
+/* certtemplate.css */
+.cert-wrapper {
+  text-align: center;
+  padding: 30px;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+.certificate {
+  background: white;
+  border: 15px double #2c3e50;
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.cert-border {
+  border: 8px solid #2980b9;
+  padding: 40px 30px;
+  background-color: rgba(255, 255, 255, 0.96);
+  position: relative;
+}
+
+.cert-logo {
+  width: 120px;
+  position: absolute;
+  top: 30px;
+  left: 10%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.cert-header h1 {
+  font-size: 40px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.cert-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin: 10px 0 5px;
+  font-style: italic;
+}
+
+.cert-header h2 {
+  font-size: 30px;
+  color: #1f4788;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.cert-desc {
+  font-size: 17px;
+  color: #444;
+  margin-top: 8px;
+}
+
+.cert-header h3 {
+  font-size: 24px;
+  color: #34495e;
+  margin: 5px 0;
+}
+
+.cert-date {
+  font-size: 15px;
+  color: #333;
+  margin-top: 5px;
+}
+
+.cert-id {
+  font-weight: bold;
+  color: #2980b9;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.cert-header p {
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.cert-footer {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 40px;
+  position: relative;
+  text-align: left;
+}
+
+.signature-block {
+  text-align: right;
+  font-family: 'Brush Script MT', cursive;
+  color: #1f4788;
+}
+
+.signature-name {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.signature-line {
+  border-top: 2px solid #1f4788;
+  margin: 0 auto 5px 0;
+  width: auto; /* fallback */
+}
+
+.signature-title {
+  font-size: 14px;
+  color: #555;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-info {
+  font-size: 12px;
+  font-style: italic;
+  color: #777;
+  max-width: 300px;
+  text-align: left;
+}
+
+.download-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #1c5980;
+}
+
+.alt-template-note {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  font-style: italic;
+}
+
+.alt-template-note a {
+  color: #2980b9;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.alt-template-note a:hover {
+  text-decoration: underline;
+}

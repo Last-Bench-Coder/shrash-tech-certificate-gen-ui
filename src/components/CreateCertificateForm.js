@@ -41,10 +41,10 @@ const CreateCertificateForm = () => {
       const response = await axios.post(API_ENDPOINTS.CREATE_CERTIFICATE, requestBody);
       setFormSubmitted(true);
       setLoading(false);
-
+      console.log(response.data._id);
       // Automatically send certificate after creation
       const sendResponse = await axios.post(API_ENDPOINTS.SEND_CERTIFICATE_LINK(response.data._id), {
-        downloadURL: "https://certificate-dunia.vercel.app/gen-certificate"
+        downloadURL: `https://certificate-dunia.vercel.app/certificate/${response.data._id}`
       });
 
       console.log("Certificate sent:", sendResponse.data);
