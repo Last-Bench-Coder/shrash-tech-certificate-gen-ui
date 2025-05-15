@@ -33,8 +33,7 @@ const CreateCertificateForm = () => {
       institutePhone,
       instituteEmail,
       instituteLogo,
-      signatureName,
-      htmlContent: ''
+      signatureName
     };
 
     try {

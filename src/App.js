@@ -9,6 +9,7 @@ import Header from './components/shared/Header';
 import Owner from './components/Owner';
 import CreateCertificateForm from './components/CreateCertificateForm';
 import CertificateViewer from './components/CertificateViewer';
+import CertificateSearch from './components/CertificateSearch';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/owner" element={<Owner />} />
         <Route path="/gen-certificate" element={<CreateCertificateForm />} />
-        <Route path="/certificate/:id" element={<CertificateViewer />} />
+        <Route path="/certificate/:id" element={<CertificateViewer />} />        
+        <Route path="/certificate-search" element={<CertificateSearch />} />
       </Routes>
       <Footer />
     </Router>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css';
-import { Menu, X, Home, Info, Phone, User, Sparkles, FileBadge } from 'lucide-react';
+import { Menu, X, Home, Info, Phone, User, Sparkles, FileBadge, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -32,6 +32,11 @@ const Header = () => {
           <li>
             <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
               <Phone size={18} className="nav-icon" /> Contact
+            </Link>
+          </li>
+          <li>
+            <Link to="/certificate-search" onClick={() => setMobileMenuOpen(false)}>
+              <Download size={18} className="nav-icon" /> Download Certificate
             </Link>
           </li>
           <li>
